@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="Ellipse_3" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#2680eb" flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="telepon-icon" transform="translate(13.848 14.145)">
+    <g transform="matrix(1, 0, 0, 1, -13.85, -14.14)" filter="url(#Ellipse_3)">
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="15" cy="15" r="15" transform="translate(15 15)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(3.152 2.855)" fill="none" stroke="#2680eb" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="Path_81" data-name="Path 81" d="M12.922.634,10.2.005A.633.633,0,0,0,9.476.37L8.218,3.305a.627.627,0,0,0,.181.734l1.588,1.3A9.714,9.714,0,0,1,5.342,9.984L4.042,8.4a.628.628,0,0,0-.734-.181L.373,9.473a.637.637,0,0,0-.367.723l.629,2.726a.629.629,0,0,0,.613.488A12.161,12.161,0,0,0,13.41,1.248.628.628,0,0,0,12.922.634Z" transform="translate(9.323 9.029)" fill="none" stroke="#2680eb" stroke-width="1"/>
+  </g>
+</svg>

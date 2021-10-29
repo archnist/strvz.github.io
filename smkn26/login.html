@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <h1>LOGIN</h1>
+
+<div class="login">
+<label>
+    Nama Siswa
+</label>
+<input type="text" placeholder="Masukkan Nama Anda" class="name">
+<label>
+    Kelas
+</label>
+<input type="text" placeholder="Kelas Anda Belajar" class="kelas">
+<a href="#" class="btn">Masuk</a>
+</div>
+
+</body>
+
+<head>
+<style>
+
+body{
+background-image: url(selamatdatang.png);
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+h1{
+text-align: center;
+margin-top: 110px;
+font-family: sans-serif;
+font-size: 45px;
+letter-spacing: 2px;
+}
+
+.login{
+margin-left: 510px;
+margin-top: -10px;
+z-index: 30;
+}
+
+label{
+font-size: 30px;
+margin-top: 20px;
+line-height: 100px;
+position: relative;
+font-family: sans-serif;
+user-select: none;
+}
+
+input{
+display: block;
+font-size: 25px;
+margin-top: -20px;
+padding: 5px 10px;
+border-radius: 20px;
+outline: none;
+border: 2px solid black;
+}
+
+.btn{
+text-decoration: none;
+color: white;
+background: rgb(34, 164, 207);
+text-align: center;
+margin-top: 40px;
+border-radius: 30px;
+width: 315px;
+font-size: 25px;
+letter-spacing: 2px;
+font-family: sans-serif;
+position: absolute;
+padding: 10px;
+}
+
+</style>
+</head>
+
+<script>
+
+const btn = document.querySelector('.btn');
+const name = document.querySelector('.name');
+const kelas = document.querySelector('.kelas');
+var admin = "Muhammad Agil";
+var adminclass = "X SIJA 1";
+
+btn.onclick = ()=>{
+if(name.value == "") {
+alert("Username Wajib Diisi!");
+} else if(kelas.value == "") {
+alert("Kelas Wajib Diisi!");
+} else if(name.value == admin && kelas.value == adminclass){
+alert("Selamat Datang " + name.value);
+btn.href = "web.html";
+} else {
+alert("Data Tidak Valid!");
+btn.href = "#";
+}
+}
+
+
+</script>
+
+</html>

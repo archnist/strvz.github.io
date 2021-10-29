@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      #slider {
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      #slider li {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        transition: .5s ease all;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="slider">
+      <li>
+          <img src="icon.png">
+      </li>
+      <li>
+          <img src="logo.png">
+      </li>
+      <li>
+          <img src="sejarah.png">
+      </li>
+    </ul>
+    <script>
+      // Slide every slideDelay seconds
+
+      const slider = document.getElementById("slider");
+
+      var angka = 0;
+      window.setInterval(()=>{
+        angka++;
+        if (angka === slider.childElementCount) {
+          angka = 0;
+        }
+
+        // Actual slide
+        slider.firstElementChild.style.setProperty("margin-left", "-" + angka + "00%");
+      }, 3000);
+
+    </script>
+  </body>
+</html>
