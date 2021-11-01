@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="Ellipse_3" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#2680eb" flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="alamat-icon" transform="translate(13.848 14.145)">
+    <g transform="matrix(1, 0, 0, 1, -13.85, -14.14)" filter="url(#Ellipse_3)">
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="15" cy="15" r="15" transform="translate(15 15)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(3.152 2.855)" fill="none" stroke="#2680eb" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+    <path id="Path_80" data-name="Path 80" d="M4.949,14.411C.775,8.36,0,7.739,0,5.515a5.515,5.515,0,0,1,11.031,0c0,2.224-.775,2.845-4.949,8.9a.69.69,0,0,1-1.134,0Zm.567-6.6a2.3,2.3,0,1,0-2.3-2.3A2.3,2.3,0,0,0,5.515,7.814Z" transform="translate(10.912 8.409)" fill="none" stroke="#2680eb" stroke-width="1"/>
+  </g>
+</svg>
