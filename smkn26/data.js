@@ -1,7 +1,7 @@
 let kegiatan = [
    '04.30 - 05.00 : Sholat Subuh',  
    '05.00 - 06.30 : Siap-Siap Untuk Sekolah',  
-   '06.30 - 11.25 : Belajar',  
+   '06.30 - 11.25 : Belajar PJJ',  
    '11.25 - 12.00 : Istirahat',
    '12.06 - 12.30 : Sholat Dzuhur',
    '12.30 - 13.00 : Makan Siang',
