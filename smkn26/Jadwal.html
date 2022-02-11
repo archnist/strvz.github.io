@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>MySchedule</title>
+  </head>
+  <body class="overflow-hidden"> 
+  <nav class="navbar navbar-dark bg-primary fixed-top invisible">
+  <div class="container-fluid">
+  <a class="navbar-brand fs-1" href="#">MySchedule</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header bg-primary">
+        <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel"><span style="color: white;">Menu</span></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body fs-5 text-center">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: black;">All Days</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnSenin" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Senin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnSelasa" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Selasa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnRabu" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rabu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnKamis" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Kamis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnJumat" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Jum'at</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnSabtu" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sabtu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnMinggu" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Minggu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btnAbout" href="#" style="color: grey;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <h1 class="acuan mt-5">Jadwal Kegiatan Harian</h1>
+    </div>
+  </div>
+
+
+  <div class="row fs-5">
+      <div class="col-md-4 pizza"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqZ8H_SlVjI-1A21-fLzZWFanZJZc1MgamA&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Senin</h5><p class="card-text" style="color: grey;">Hari pertama masuk sekolah dan belajar. Hari senin adalah hari favorit para murid.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary senin" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+      
+      <div class="col-md-4 pizza2"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQIqRlzNbQMiQROkmonvjRIlY5DcP9sLMTw&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Selasa</h5><p class="card-text" style="color: grey;">Hari yang menyenangkan, karena bisa merangkai arduino dan membuat program yang menakjubkan.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary selasa" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+      
+      <div class="col-md-4 pizza3"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkNowdAsDRvBAabszr9WJvzH42H2HVPYWTuw&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Rabu</h5><p class="card-text" style="color: grey;">Hari rabu adalah hari yang menantang, karena matematika ada di jam pertama pelajaran.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary rabu" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+      
+      <div class="col-md-4 pizza4"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOcDZSkJm8lbKaX8EdFiognMoWStx2t6ZpLA&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Kamis</h5><p class="card-text" style="color: grey;">Hari Kamis adalah hari yang penting. karena ada mapel pkk yang mengajarkan tentang kewirausahaan.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary kamis" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+      
+    <div class="col-md-4 pasta"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmoQS1HYqby9QKCDW_lCk1-o8IOWu0v0-Rg&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Jum'at</h5><p class="card-text" style="color: grey;">Hari Jum'at adalah hari dengan jumlah pelajaran paling sedikit dari hari sekolah yang lain. hanya ada 2 mapel di hari jum'at.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary jumat" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+
+    <div class="col-md-4 pasta2"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAQrj_cyo_7gG-rBl4LCVPyW1CNwkqUmYgQ&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Sabtu</h5><p class="card-text" style="color: grey;">Hari sabtu adalah hari yang membosankan. karena tidak banyak yang bisa dilakukan saat liburan di masa pandemi.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary sabtu" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+
+    <div class="col-md-4 pasta3"><div class="card mb-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QLNC0SD9zZW0_a2T1XAW_hJ9R5mYpp7MSw&usqp=CAU" class="card-img-top"><div class="card-body"><h5 class="card-title fs-1">Minggu</h5><p class="card-text" style="color: grey;">Hari minggu adalah hari yang melelahkan. karena biasanya pada hari minggulah tugas tugas yang belum selesai akan dikerjakan.</p><h5 class="card-title" style="color: #0d6efd;">04.30 - 22.00 WIB</h5><a href="#" class="btn btn-primary minggu" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jadwal</a></div></div></div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel" style="color: white;"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <span class="jam1"></span> <br>
+       <span class="jam2"></span> <br>
+       <span class="jam3"></span> <br>
+       <span class="jam4"></span> <br>
+       <span class="jam5"></span> <br>
+       <span class="jam6"></span> <br>
+       <span class="jam7"></span> <br>
+       <span class="jam8"></span> <br>
+       <span class="jam9"></span> <br>
+       <span class="jam10"></span> <br>
+       <span class="jam11"></span> <br>
+       <span class="jam12"></span> <br>
+       <span class="jam13"></span> <br>
+       <span class="jam14"></span> <br>
+       <span class="jam15"></span> <br>
+       <span class="jam16"></span> <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  <div class="loading">
+    <div class="logo">
+    <i class="fa-solid fa-book-open mt-4"></i>
+      </div>
+      <h4>myschedule</h4>
+    <h5 class="owner">Agile ft Sadboy</h5>
+    </div>
+    
+    
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+     
+body{
+font-family: 'Bebas Neue', cursive;
+user-select: none;
+}
+      
+.hilang{
+display: none;
+}
+
+.animasi{
+opacity: 1;
+transition: 1s;
+}
+
+.loading{
+position: fixed;
+width: 100%;
+background: white;
+color: #0d6efd;
+text-align: center;
+z-index: 10;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+}
+
+.loading h4{
+font-size: 50px;
+}
+
+.logo{
+font-size: 100px;
+margin-top: 230px;
+}
+
+.owner{
+margin-top: 250px;
+transition: 1s ease all;
+opacity: 0;
+}
+
+.selesai{
+opacity: 0;
+transition: 1s ease all;
+z-index: -1;
+}
+
+    </style>
+  </head>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="js/script1.js"></script>
+    
+    <script src="https://muhammadagil.github.io/smkn26/data.js"></script>
+    
+    
+  </body>
+</html>
