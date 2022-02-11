@@ -21,7 +21,7 @@ let kegiatan = [
    '06.30 - 12.00 : Aktivitas Bebas'
       ];  
       
-      let hari = ["Senin", "Senin", "Senin", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+      let hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
 
       let about = `MySchedule adalah aplikasi yang berfungsi sebagai pengingat jadwal kegiatan yang dilakukan setiap hari.`;
       
