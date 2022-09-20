@@ -1,4 +1,4 @@
-$.getJSON('https://al-quran-8d642.firebaseio.com/data.json?print=pretty', function(data) {
+$.getJSON('https://muhammadagil.github.io/tugasSKJ/js/data.json', function(data) {
     let surah = data;
     $.each(surah, function(i, data) {
         $('#daftar-surah').append('<a class="link" href="'+ data.link +'"><div class="card"><h4>'+ data.nama +' ('+ data.nomor +')</h4> <h5>'+ data.arti +' ('+ data.ayat +' ayat)</h5><div class="lafaz"><h4>'+ data.asma +'</h4></div></div></a>')
