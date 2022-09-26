@@ -1,4 +1,5 @@
 [ {
+    "surah": "Al Fatihah",
     "ar" : "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
     "id" : "Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
     "nomor" : "1",
@@ -34,6 +35,7 @@
     "nomor" : "7",
     "tr" : "<u>sh</u>ir<u>aath</u>a <strong>al</strong>la<u>dz</u>iina an'amta 'alayhim ghayri <strong>a</strong>lmagh<u>dh</u>uubi 'alayhim wal<u>aa</u> <strong>al</strong><u>dhdhaa</u>lliin<strong>a</strong>"
   }, {
+    "surah": "Al Baqarah",
     "ar" : "الٓمّٓۚ",
     "id" : "Alif laam miim.",
     "nomor" : "1",
