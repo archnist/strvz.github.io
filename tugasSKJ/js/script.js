@@ -8,7 +8,7 @@ $.getJSON('https://muhammadagil.github.io/tugasSKJ/js/data.json', function(data)
 $.getJSON('https://muhammadagil.github.io/tugasSKJ/js/juz.json', function(data) {
     let juz = data;
     $.each(juz, function(i, data) {
-        $('#daftar-juz').append('<a class="link" href="../src/juz1.html"><div class="card2"><h4>'+ data.nama +'</h4> <h5>'+ data.surah +'</h5><div class="lafaz2"><h4>'+ data.lafaz +'</h4></div></div></a>')
+        $('#daftar-juz').append('<a class="link" href="'+ data.link +'"><div class="card2"><h4>'+ data.nama +'</h4> <h5>'+ data.surah +'</h5><div class="lafaz2"><h4>'+ data.lafaz +'</h4></div></div></a>')
     });
 });
 
