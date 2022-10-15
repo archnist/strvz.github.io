@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #012549;
+}
+
+.body{
+    opacity: 0;
+    transition: .5s ease all;
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #012549;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: .5s ease all;
+    z-index: 3;
+}
+ 
+.logo{
+    width: 70%;
+    margin-top: 60%;
+    transition: 1s ease all; 
+    opacity: 0;
+}
+
+.logo2{
+    margin-top: 50%;
+    opacity: 1;
+}
+
+.title{
+    font-size: 4vw;
+    color: white;
+    font-family: Bahnschrift;
+    margin-top: 5vw;
+    opacity: 0;
+    transition: .7s ease all;
+    text-align: center;
+}
+
+.title2{
+    opacity: 1;
+}
+
+.selesai{
+    margin-left: -600px;
+    transition: 2s ease all;
+}
+
+.selesai2{
+    display: none;
+}
+
+.vector1{
+    width: 45%;
+}
+
+.vector2{
+    position: absolute;
+    width: 50%;
+}
+
+.button{
+    position: absolute;
+    top: 4vw;
+    right: 5%;
+    transition: .5s ease all;
+}
+
+.btn1, .btn2{
+ border: 3px solid #A3FEFF;
+ padding: 8px 11px;
+ background: none;
+ border-radius: 30px;
+ color: #FFFFFF;
+ font-size: 3vw;
+ font-weight: 400;
+}
+
+.btn1{
+    position: relative;
+    right: 10%;
+}
+
+.nama{
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 8vw;
+    width: 50vw;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.profil{
+    position: relative;
+    text-align: right;
+    right: 12%;
+    top: -33vw;
+}
+
+.foto{
+    width: 26%;
+    position: relative;
+    height: 30vw;
+    border-radius: 300vw;
+    left: 24.6vw;
+    z-index: 2;
+}
+
+.decor{
+    width: 21%;
+    top: 8vw;
+    position: relative;
+}
+
+.status{
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 15.5%;
+    font-size: 3.5vw;
+}
+
+.container, .container2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Bahnschrift;
+}
+
+.container h2, .container2 h2{
+    font-size: 4.2vw;
+}
+
+.container p{
+    margin-top: 3vw;
+    font-size: 3.5vw;
+}
+
+.container div, .container2 div{
+    background: #CEEBEF;
+    width: 20%;
+    line-height: 3.5vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.box1, .box2, .box3, .box4{
+    border-radius: 1vw;
+}
+
+.box1{
+    flex-grow: 12;
+    margin-right: 5vw;
+    padding: 6vw 6vw 5vw 6vw;
+}
+
+.box2{
+    flex-grow: 6;
+    text-align: center;
+    padding: 6vw 0 2vw 0;
+}
+
+.box2 img{
+    width: 35vw;
+}
+
+.container2{
+    margin-top: 6vw;
+    margin-bottom: 15vw;
+}
+
+.container2 p{
+    margin-top: 2vw;
+    font-size: 3.5vw;
+}
+
+.box3, .box4{
+    flex-grow: 5;
+    padding: 2vw 6vw 2vw 6vw;
+}
+
+.box3{
+    margin-right: 4vw;
+}
+
+.footer{
+    background: #FFDDFE;
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.footer h5{
+    font-size: 4vw;
+}
+
+.footer .kaveenic{
+    width: 35vw;
+    padding: 5vw 0;
+}
+
+.part{
+    margin-top: 2vw;
+}
+
+.sc{
+    width: 30vw;
+    margin-right: 20vw;
+}
+
+.smkn26{
+    width: 20vw;
+}
+
+.touch{
+    margin-top: 6vw;
+    transition: 1s ease all;
+    opacity: 0;
+}
+
+.touch h1{
+    color: white;
+    font-size: 6vw;
+    font-family: Bahnschrift;
+    width: 40vw;
+    position: relative;
+    bottom: 8vw;
+    text-align: center;
+    left: 30.5vw;
+}
+
+.touch .vector3{
+    width: 30vw;
+    top: 2vw;
+    position: relative;
+}
+
+.touch .vector4{
+    width: 30vw;
+    position: relative;
+    left: 70vw;
+    bottom: 20vw;
+}
+
+.email, .instagram, .linkin{
+    margin-bottom: 15vw;
+}
+
+.social .email, .social .instagram, .social .linkin{
+    background: #CEEBEF;
+    padding: 5vw 5vw;
+    width: 25vw;
+    text-align: center;
+    position: relative;
+    left: 38vw;
+    border-radius: 30vw;
+}
+
+.email img, .instagram img, .linkin img{
+    width: 100%;
+}
+
+.email h3, .instagram h3, .linkin h3{
+    position: absolute;
+    font-family: Bahnschrift;
+    background: #CEEBEF;
+    padding: 5vw 5vw;
+    font-size: 4vw;
+    border-radius: 5vw;
+    right: -15vw;
+    text-align: center;
+    margin-top: -13vw;
+    width: 55vw;
+    z-index: -1;
+}
+
+.email h3{
+    margin-top: -12.5vw;
+}
+
+.instagram h3{
+    margin-top: -13.5vw;
+}
+
+.linkin h3{
+    margin-top: -13.5vw;
+}
+
+.body2{
+    display: none;
+}
+
+.body3{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
