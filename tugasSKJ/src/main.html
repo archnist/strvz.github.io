@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <div class="loading">
+        <img class="logo" src="../img/img1.png">
+        <h1 class="title">Al Qur'an <br> <span style="font-size:15px">Versi 1.0.0</span><br> <span style="font-size: 15px;">Made by Agil dan Zian</span></h1>
+    </div>
+ 
+    <div class="header">
+        <div class="search">
+            <h1>Al-Qur'an <i class="icon fa-solid fa-magnifying-glass"></i></h1>
+            <input type="text" placeholder="Cari Surah" onkeyup="proses()" id="cariKat" class="body2">
+        </div>
+        <div class="menu">
+            <ul>
+             <li><h4 class="surah active">Surah</h4></li>
+             <li><h4 class="juz">Juz</h4></li>
+            </ul>
+        </div> 
+    </div>
+
+    <div class="body body2">
+        <h1>Daftar Surah</h1>
+
+        <div class="daftar" id="daftar-surah">
+            
+        </div>
+    </div>
+
+    <div class="body4 body2">
+        <h1>Daftar Juz</h1>
+
+        <div class="daftar2" id="daftar-juz">
+            
+        </div>
+    </div>
+
+    <div class="feature">
+        <ul>
+            <li><a href="waktu.html"><i class="fa-solid fa-mosque"></i></a></li>
+            <li><a href="main.html"><i class="fa-solid fa-book-quran"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+        <ul>
+            <li>Jadwal Sholat</li>
+            <li>Al Qur'an</li>
+            <li>Profil</li>
+        </ul>
+    </div>
+
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+<script>
+    var icon = document.querySelector(".icon");
+    var kolom = document.getElementById("cariKat");
+    var body = document.querySelector(".body");
+    var input = document.getElementById("cariKat");
+
+    icon.addEventListener("click", function() {
+        kolom.classList.remove("body2");
+    });
+
+    body.addEventListener("click", function() {
+        kolom.classList.add("body2");
+        input.value = "";
+    });
+
+    function proses()
+{
+	var input = document.getElementById("cariKat");
+	var filter = input.value.toLowerCase();
+	var surah = document.querySelectorAll("span")
+	for(var i = 0; i<surah.length; i++){
+		var ahref = document.querySelectorAll("span")[i];
+		if(ahref.innerHTML.toLowerCase().indexOf(filter) > -1){
+			surah[i].style.display = "";
+		}else{
+			surah[i].style.display = "none";
+		}
+	}
+}
+</script>
+
+</html>
